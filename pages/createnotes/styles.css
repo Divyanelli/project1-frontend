@@ -43,13 +43,22 @@ body{
 .create-note-input{
     border: none;
     width: 90%;
-    height:60%;
+    height:50%;
     border-radius: 15px;
     color: black;
     padding: 10px;
     text-align: center;
 }
-.create-note-input:focus{
+.create-notes-heading{
+    border: none;
+    width: 90%;
+    height:10%;
+    border-radius: 15px;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+.create-note-input:focus, .create-note-heading:focus{
     outline: none;
     
 }
