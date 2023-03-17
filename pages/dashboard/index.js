@@ -3,12 +3,12 @@ const cardContainer = document.querySelector(".card-container");
 
 const cardData = [
     {heading:"heading1", content:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error deserunt asperiores iusto sapiente. Dolorum suscipit ullam aliquam officia enim. Totam quos doloremque provident reiciendis illum officiis in molestiae voluptas doloribus, accusantium delectus consectetur voluptate excepturi iure vitae ipsam veniam earum.", id:1},
-    {heading:"heading1", content:"gsajcjsgdcm", id:2},
-    {heading:"heading1", content:"gsajcjsgdcm", id:3},
-    {heading:"heading1", content:"gsajcjsgdcm", id:4},
-    {heading:"heading1", content:"gsajcjsgdcm", id:5},
-    {heading:"heading1", content:"gsajcjsgdcm", id:6},
-    {heading:"heading1", content:"gsajcjsgdcm", id:7}
+    {heading:"heading2", content:"gsajcjsgdcm", id:2},
+    {heading:"heading3", content:"gsajcjsgdcm", id:3},
+    {heading:"heading4", content:"gsajcjsgdcm", id:4},
+    {heading:"heading5", content:"gsajcjsgdcm", id:5},
+    {heading:"heading6", content:"gsajcjsgdcm", id:6},
+    {heading:"heading7", content:"gsajcjsgdcm", id:7}
 ];
 
 const createNotes = (array)=>{
@@ -21,7 +21,8 @@ const createNotes = (array)=>{
 
         const insideHtml = `<div class="card-header">
         <div class="card-heading">${heading}</div>
-        <div class="edit-note"><img src="../../assests/edit-note.svg" alt=""></div></div>
+        <a href="../updatenotes/updatenotes.html?noteId=${id}">
+        <div class="edit-note"><img src="../../assests/edit-note.svg" alt=""></div></a></div>
         <div class="card-content">${content}</div>`
 
         card.innerHTML=insideHtml;
