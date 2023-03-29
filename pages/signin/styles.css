@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(45deg, #ff9ce3, #4ab3f4);
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.S-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 100px;
+}
+.signIn-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid white;
+  width: 250px;
+  height: 250px;
+}
+.signUp-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid white;
+  width: 250px;
+  height: 350px;
+  margin-top: 80px;
+}
+.visible {
+  opacity: 1;
+}
+.heading {
+  padding: 10px;
+}
+.sign-button {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+  margin: 10px 0px 0px 80px;
+  text-align: center;
+  border: 2px white;
+  width: fit-content;
+}
+.signin-email,
+.signup-email,
+.signin-password,
+.signup-name,
+.signup-password,
+.signup-retyped-password {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 15px;
+  border: 1px solid white;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  cursor: pointer;
+  margin-left: 15px;
+}
+a {
+  font-size: 12px;
+  padding-left: 15px;
+}
+
+.circle1,
+.circle2 {
+  z-index: -5;
+  position: absolute;
+}
+
+.circle1 {
+  background: linear-gradient(180deg, #97ff57 0%, #0094ff 99%);
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  filter: blur(10px);
+  transform: rotate(18deg);
+  left: -120px;
+  top: -100px;
+}
+
+.circle2 {
+  background: linear-gradient(180deg, #ff57d0 0%, #0094ff 99%);
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  filter: blur(10px);
+  transform: rotate(18deg);
+  right: -50px;
+  bottom: -80px;
+}
