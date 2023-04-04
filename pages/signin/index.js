@@ -25,9 +25,8 @@ signInContainer.addEventListener("submit", (event) => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({ email, password }),
-  }).then((res) => res.json());
-  console
-    .log(res)
+  })
+    .then((res) => res.json())
     .then((data) => {
       const { token } = data;
 

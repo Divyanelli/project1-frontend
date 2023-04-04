@@ -1,97 +1,109 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    color: white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
 }
 
-body{
-    min-height: 100vh;
-    width: 100%;
-    background: linear-gradient(45deg , #FF9CE3 ,#4ab3f4 );
-    overflow: hidden;
-    /* opacity: 0; */
-    transition: opacity 1s ease;
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(45deg, #ff9ce3, #4ab3f4);
+  overflow: hidden;
+  /* opacity: 0; */
+  transition: opacity 1s ease;
 }
 
-.visible{
-    opacity: 1;
+.visible {
+  opacity: 1;
 }
 
-nav{
-    height: 10vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-between ;
-    align-items: center;
-    padding: 0 80px;
+nav {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
 }
-.welcome{
-    font-size: 40px;
-    font-weight: bold;
+.welcome {
+  font-size: 40px;
+  font-weight: bold;
 }
-.nav-controls{
-    display: flex;
+.nav-controls {
+  display: flex;
 }
-.nav-options{
-    background-color:rgba(255,255,255, 0.4);
-    padding: 10px;
-    border-radius: 15px;
-    border: 1px solid white;
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter:blur(6px) ;
-    cursor: pointer;
-    margin-left: 15px;
-}
-
-.card-container{
-    height: 90vh;
-    width: 100%;
-    display: flex;
-    padding: 0 80px;
-    align-items: flex-start;
-    gap: 10px;
-    flex-wrap: wrap;
-    padding-top: 20px;
-    /* background: lightblue; */
+.nav-options {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid white;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  cursor: pointer;
+  margin-left: 15px;
 }
 
-.card{
-    width:200px;
-    height:250px;
-    padding: 10px;
-    border-radius: 15px;
-    background-color:rgba(255,255,255, 0.4);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter:blur(6px) ;
+.card-container {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  padding: 0 80px;
+  align-items: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  /* background: lightblue; */
 }
-.card-header{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.card {
+  width: 200px;
+  height: 250px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
-.card-heading{
-    font-weight: bold;
-    font-size: 20px;
+.card-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
-.edit-note{
-    height: 40px;
-    cursor: pointer;
+.card-heading {
+  font-weight: bold;
+  font-size: 20px;
+  width: 200px;
 }
-.edit-note img{
-    height: 100%;
-    width: 100%;
+/* .edit-note,
+.delete-note {
+  height: 40px;
+  cursor: pointer;
 }
-.card-content{
-    font-size: 14px;
-    margin-top: 10px;
-    width: 100%;
-    border: 1px solid white;
-    padding: 10px;
-    border-radius: 15px;
-    word-wrap: break-word;
-    height: 180px;
-    overflow: scroll;
+.edit-note img {
+  height: 100%;
+  width: 100%;
+} */
+.card-content {
+  font-size: 14px;
+  margin-top: 10px;
+  width: 100%;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 15px;
+  word-wrap: break-word;
+  height: 180px;
+  overflow: scroll;
+}
+
+.card-content::-webkit-scrollbar {
+  display: none;
+}
+
+.img {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  padding: 2px;
 }
